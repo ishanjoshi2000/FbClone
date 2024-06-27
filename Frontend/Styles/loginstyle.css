@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 211, 211);
+}
+.text h1 , .text h2{
+    font-family: 'Helvetica Neue';
+}
+.text h1{
+    font-size: 50px;
+    background: linear-gradient(to right , #0388f5, #04aaec);
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 20px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login{
+    width: 550px;
+    height:300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(29, 28, 28, 0.5); 
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+form{
+    
+    padding: 10px 10px 10px 10px;
+    border-bottom: solid 0.5px #959799;
+   
+}
+ form input{
+     width: 100%;
+     padding: 10px;
+     margin: 5px;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     cursor: pointer;
+    
+
+ }
+ form a{
+    color: #0388f5;
+    
+ }
+ .createButton{
+    margin-top: 5px;
+    padding: 5px;
+    background-color:rgb(110, 233, 110);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+ }
+ form .loginButton{
+    background-color: #04aaec;
+    color: #fff;
+    font-size:20px ;
+ }
+form input:hover{
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.5); 
+    transform: scale(1.05);
+}
+.createButton:hover{    
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.5); 
+    transform: scale(1.05);
+}
