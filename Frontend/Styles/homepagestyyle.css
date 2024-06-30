@@ -25,10 +25,11 @@ body{
 
 }
  .searchfeild{
-    width: 100px;
+    width: 100%;
     outline: none;
     border: none;
     background: transparent;
+    margin: 3px;
 }
 .searchbar{
     background-color: #e2e2e2;
@@ -85,7 +86,7 @@ a:hover::after {
 a.current{
     color:#0d81eefa;
 }
-img{
+.img-wrapper img{
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -121,16 +122,14 @@ img{
 .user-info{
     display: flex;
     align-items: center;
+    padding: 5px;
 }
-.explore-section{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
+
 .exlore-top{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border-bottom: solid 1.5px #a7a6a6;
+    margin: 5px 5px 5px 10px;
 }
 
 .exlore-top img{
@@ -147,4 +146,69 @@ img{
     justify-content: center;
     padding: 15px;
     margin: 5px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 25px;
+    background-color: #b4b2b2;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.shortcuts{
+    border-bottom: solid 1.5px #a7a6a6;
+    box-sizing: border-box;
+    margin: 5px 5px 5px 10px;
+}
+.shortcuts-wrap{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    
+}
+.shortcuts img{
+    border-radius: 5px;
+}
+
+.Stories {
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+}
+
+
+.story-box {
+    position: relative;
+    width: 100px; 
+}
+
+
+ .story-box .story-wrapper {
+    width: 30px; 
+    height: 30px;
+    border: 2px solid #d4d2d2; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+
+.story-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.story-box img {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 8px; 
 }
