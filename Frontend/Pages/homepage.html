@@ -8,7 +8,7 @@
         
     </head>
     <body>
-        <div class="header">
+        <header>
             <div class="search">
             <i class="fa-brands fa-facebook" ></i>
                 <div class="searchbar">
@@ -17,12 +17,12 @@
                 </div>
            </div> 
         
-            <div class="links">
+            <nav>
                 <a href="#" class="current"><i class="fa-solid fa-house"></i></a>
                 <a href="#"><i class="fa-solid fa-tv"></i></a>
                 <a href="#"><i class="fa-solid fa-shop"></i></a>
                 <a href="#"><i class="fa-solid fa-people-group"></i></a>
-            </div>
+            </nav>
             <div class="actions"> 
                 <div class="user-info">
                    <div class="img-wrapper"><img src="../Images/download.jfif"></div> 
@@ -33,7 +33,7 @@
                 <div class="icon-wrapper"><i class="fa-solid fa-bell"></i></div>
                 <div class="icon-wrapper"><i class="fa-solid fa-caret-down"></i></div>
             </div>
-        </div>
+        </header>
         
         <div class="content">
             <div class="exlpore-section">
@@ -43,19 +43,19 @@
                         <p>Joshephine </p>
                     </div>
                     <div class="user-info">
-                        <div class="icon-wrapp"><i class="fa-solid fa-tv"></i></div>
+                        <div class="icon-wrapper exlpore"><i class="fa-solid fa-tv"></i></div>
                         <p>Wacth </p>
                     </div>
                     <div class="user-info">
-                        <div class="icon-wrapp"><i class="fa-regular fa-calendar-minus"></i></div>
+                        <div class="icon-wrapper exlpore"><i class="fa-regular fa-calendar-minus"></i></div>
                         <p>Events </p>
                     </div>
                     <div class="user-info">
-                        <div class="icon-wrapp"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="icon-wrapper exlpore"><i class="fa-solid fa-user-group"></i></div>
                         <p>Freinds</p>
                     </div>
                     <div class="user-info">
-                        <div class="icon-wrapp"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <div class="icon-wrapper exlpore"><i class="fa-solid fa-clock-rotate-left"></i></div>
                         <p>Memories</p>
                     </div>
                     <div class="box"><p>See More &nbsp;</p><i class="fa-solid fa-angle-down"></i></div>
@@ -70,59 +70,70 @@
                     <div class="box">See More &nbsp;<i class="fa-solid fa-angle-down"></i></div>
                 </div>
             </div>
-
-            <div class="Post-section">
-                <div class="Stories">
-                    <div class="story-box">
-                        <div class="story-wrapper"><img src="../Images/download.jfif"></div>
-                        <img src="../Images/download.jfif">
-                    </div>
-                    <div class="story-box">
-                        <div class="story-wrapper"><img src="../Images/download (2).jfif"></div>
-                        <img src="../Images/download (2).jfif">
-                    </div>
-                    <div class="story-box">
-                        <div class="story-wrapper"><img src="../Images/download (3).jfif"></div>
-                        <img src="../Images/download (3).jfif">
-                    </div>
-                    <div class="story-box">
-                        <div class="story-wrapper"><img src="../Images/download (4).jfif"></div>
-                        <img src="../Images/download (4).jfif">
-                    </div>
-                    <div class="story-box">
-                        <div class="story-wrapper"><img src="../Images/download (5).jfif"></div>
-                        <img src="../Images/download (5).jfif">
-                    </div>
-                </div>
-                <div class="own-post">
-                    <img src="../Images/download.jfif">
-                    <input type="text" placeholder="What's on your mind Joshephine">
-                    <div class="own-post-actions">
-                       <p><i class="fa-solid fa-photo-film"></i> Photos/Videos</p>
-                       <p><i class="fa-solid fa-user-plus"></i> Tag freinds </p>
-                        <p><i class="fa-regular fa-face-smile"></i>Feelings/activities</p>
-                    </div>
-                </div>
-                <div class="freind-posts">
-                    <div class="top">
-                        <img src="../Images/download (2).jfif">
-                        <div class="name-time">
-                            <p>Fiona Oxrei</p>
-                            <p>5hr</p>
-                            <i class="fa-solid fa-user-group"></i>
+            <div class="spacing-container">   
+                <section class="Post-section">
+                    <section class="Stories">
+                        <div class="icon-wrapper scroll left"><button class="scroll-btn " onclick="scroller('left')"><i class="fa-solid fa-angle-left"></i></button></div>
+                        <div class="story-box">
+                            <div class="story-wrapper"><img src="../Images/download.jfif"></div>
+                            <img src="../Images/download.jfif">
                         </div>
-                        <i class="fa-solid fa-ellipsis"></i>
+                        <div class="story-box">
+                            <div class="story-wrapper"><img src="../Images/download (2).jfif"></div>
+                            <img src="../Images/download (2).jfif">
+                        </div>
+                        <div class="story-box">
+                            <div class="story-wrapper"><img src="../Images/download (3).jfif"></div>
+                            <img src="../Images/download (3).jfif">
+                        </div>
+                        <div class="story-box">
+                            <div class="story-wrapper"><img src="../Images/download (4).jfif"></div>
+                            <img src="../Images/download (4).jfif">
+                        </div>
+                        <div class="story-box">
+                            <div class="story-wrapper"><img src="../Images/download (5).jfif"></div>
+                            <img src="../Images/download (5).jfif">
+                        </div>
+                        <div class="icon-wrapper scroll right"><button class="scroll-btn" onclick="scroller('right')"><i class="fa-solid fa-angle-right"></i></button></div>
+                    </section>
+                    
+                        <section class="own-post">
+                            <div class="user-info">
+                                <div class="img-wrapper"><img  src="../Images/download.jfif"></div> 
+                                <p>Joshephine </p>
+                            </div>
+                            <textarea  placeholder="What's on your mind Joshephine"></textarea>
+                            <div class="own-post-actions" >
+                            <p><i class="fa-solid fa-photo-film"></i> Photos/Videos</p>
+                            <p><i class="fa-solid fa-user-plus"></i> Tag freinds </p>
+                            <p><i class="fa-regular fa-face-smile"></i>Feelings/activities</p>
+                            </div>
+                        </section>
+                    <section class="freind-posts">
+                        <div class="top">
+                            <div class="name-time">
+                                <div class="user-info">
+                                    <div class="img-wrapper"><img  src="../Images/download.jfif"></div> 
+                                    <p>Joshephine </p>
+                                 </div>
+                                 <div style="display: flex;">
+                                    <p>5hr</p>
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                            </div>
+                            <div class="icon-wrapper"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div clas="middle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus velit at lacus</p>
+                            <img src="../Images/download (3).jfif">
                     </div>
-                    <div clas="middle">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus velit at lacus</p>
-                        <img src="../Images/download (2).jfif">
-                   </div>
-                   <div class="freind-post-actions">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <i class="fa-solid fa-comment"></i>
-                        <i class="fa-solid fa-share"></i>
-                   </div>
-                </div> 
+                    <div class="freind-post-actions">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share"></i>
+                    </div>
+                    </section> 
+                </section>
             </div>
             
             <div class="chat-section">
@@ -142,7 +153,7 @@
             
 
      
-
+    <script src="../Scripts/mainpage.js"></script
     </body>
 </html>
     

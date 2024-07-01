@@ -6,7 +6,7 @@
 body{
     background-color: rgb(212, 211, 211);
 }
-.header{
+header{
     position: fixed;
     top:0;
     display: flex;
@@ -47,7 +47,7 @@ body{
     font-size: 30px;
     color: rgb(4, 155, 243);
 }
-.links{
+nav{
     padding: 10px;
     display: flex;
     align-items: center;
@@ -55,13 +55,13 @@ body{
 
 }
 
-.links a{
+nav a{
     text-decoration: none;
     color: #555;
     padding: 10px 60px 10px 60px;
     position: relative;
 }
-.links a  i{
+nav a  i{
   font-size: large;
 }
  a:hover{
@@ -136,16 +136,9 @@ a.current{
     width: 30px;
     height: 30px;
 }
-.icon-wrapp{
+.icon-wrapper.exlpore{
     background-color: rgb(212, 211, 211);
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    margin: 5px;
+    
 }
 .box{
     display: flex;
@@ -174,41 +167,109 @@ a.current{
 
 .Stories {
     display: flex;
+    align-items: center;
     overflow-x: auto; 
-    gap: 10px; 
-    padding: 10px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #ccc; 
+    width: 600px;
+    position: relative;
+    scrollbar-width: none;
+    
 }
-
-
 .story-box {
     position: relative;
-    width: 100px; 
+    display: flex;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px; 
+    margin: 5px;
+
 }
-
-
- .story-box .story-wrapper {
-    width: 30px; 
-    height: 30px;
-    border: 2px solid #d4d2d2; 
-    border-radius: 50%; 
-    overflow: hidden; 
+.story-box img{
+    width: 150px;
+    height: 200px;
+    border-radius: 7px;
+}
+.story-wrapper{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    padding: 5px;
+    border: #03a3ff;
 }
-
-
-.story-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+.story-wrapper img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
 }
-
-
-.story-box img {
+.scroll-btn{
+ background-color:#ffffff;
+ border: none;
+ cursor: pointer;
+}
+.icon-wrapper.scroll{
+   z-index: 999;
+   position: absolute;
+   background-color: #ffffff;
+}
+.icon-wrapper.scroll.right{
+    right: 0; 
+}
+.own-post{
     width: 100%;
-    height: 100px; 
-    object-fit: cover;
-    border-radius: 8px; 
+    height:auto;
+    background-color: #f8f7f7;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    border-radius:10px;
+}
+.own-post img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.spacing-container{
+    padding: 10px;
+}
+.own-post .user-info{
+    padding: 0;
+}
+.own-post textarea{
+    padding: 5px;
+    margin-left: 5px;
+    width: 90%;
+    background-color: #b6b6b6;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    resize: vertical;
+    overflow-y: hidden;
+}
+.own-post-actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 5px 10px;
+    border-top: solid 1.5px #bdb7b7;
+}
+.freind-posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f8f7f7;
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top i {
+    padding: 5px;
 }
