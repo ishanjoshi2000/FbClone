@@ -348,19 +348,22 @@ a.current{
     width: 800px;
    }
    .img-wrapper img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
    }
    
 
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1024px) {
     .actions{
         display: none;
     }
+    nav  a i{
+        font-size: 30px;
+    }
     header{
         height: 70px;
-        justify-content: flex-start;
+      
     }
     header .img-wrapper img{
         height: 50px;
@@ -373,7 +376,19 @@ a.current{
     header i{
         font-size: 20px;
     }
-    header .searchbar{
-        width: 300px;
+    .searchfeild{
+        display: none;
+    }
+    .searchbar{
+        height: 40px;
+        width:40px;
+        border-radius: 50%;
+        justify-content: center;
+
+    }
+    .fa-facebook{
+        padding: 0px 10px 0px 5px;
+        font-size: 40px;
+        
     }
   }
