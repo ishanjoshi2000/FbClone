@@ -257,14 +257,17 @@ a.current{
     justify-content: space-between;
     padding: 10px 5px 10px;
     border-top: solid 1.5px #bdb7b7;
+    
 }
 .freind-posts{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-color: #f8f7f7;
     border-radius: 10px;
+    height: 370px;
+  
 }
+
 .top{
     display: flex;
     justify-content: space-between;
@@ -272,4 +275,29 @@ a.current{
 }
 .top i {
     padding: 5px;
+}
+.icon-wrapper.post{
+    background-color: #ccc;
+}
+.name-time{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.middle{
+    padding-bottom: 5px;
+}
+.middle img{
+    width: 100%;
+    height: 250px;
+}
+.freind-post-actions{
+    display: flex;
+    justify-content: space-around;
+}
+.freind-post-actions i{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+
 }
