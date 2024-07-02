@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    display: block;
+    max-width: 100%;
+}
 body{
     background-color: rgb(212, 211, 211);
 }
@@ -17,6 +21,7 @@ header{
     height: 50px;
     right: 0;
     z-index: 1000;
+    padding: 25px;
 }
 .search{
     display: flex;
@@ -43,7 +48,7 @@ header{
     align-items: center;
 }
 .fa-facebook{
-    padding: 5px;
+    padding: 10px;
     font-size: 30px;
     color: rgb(4, 155, 243);
 }
@@ -73,7 +78,7 @@ a::after {
     bottom: -5px;
     left: 0;
     width: 100%;
-    height: 2px; 
+    height: 2px;
     background-color:#0d81eefa; 
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -116,15 +121,16 @@ a.current{
 .content{
     margin-top: 70px;
     display: flex;
-    justify-content: space-between;
-    
+    padding: 5px;
 }
 .user-info{
     display: flex;
     align-items: center;
     padding: 5px;
 }
-
+.exlpore-section{
+    padding: 0px 30px 0px 10px;
+}
 .exlore-top{
     display: flex;
     flex-direction: column;
@@ -145,7 +151,7 @@ a.current{
     align-items: center;
     justify-content: center;
     width: 250px;
-    height: 25px;
+    min-height: 25px;
     background-color: #b4b2b2;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -165,6 +171,7 @@ a.current{
     border-radius: 5px;
 }
 
+
 .Stories {
     display: flex;
     align-items: center;
@@ -180,7 +187,7 @@ a.current{
     position: relative;
     display: flex;
     width: 150px;
-    height: 200px;
+    min-height: 200px;
     border-radius: 10px; 
     margin: 5px;
 
@@ -196,12 +203,13 @@ a.current{
     border-radius: 50%;
     position: absolute;
     padding: 5px;
-    border: #03a3ff;
+    
 }
 .story-wrapper img{
     height:40px;
     width:40px;
     border-radius: 50%;
+    border: #05b1f5 solid 2px;
 }
 .scroll-btn{
  background-color:#ffffff;
@@ -218,13 +226,12 @@ a.current{
 }
 .own-post{
     width: 100%;
-    height:auto;
     background-color: #f8f7f7;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius:10px;
 }
 .own-post img{
@@ -234,7 +241,7 @@ a.current{
     margin-bottom: 5px;
 }
 .spacing-container{
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
 }
 .own-post .user-info{
     padding: 0;
@@ -264,7 +271,7 @@ a.current{
     flex-direction: column;
     background-color: #f8f7f7;
     border-radius: 10px;
-    height: 370px;
+    min-height: 360px;
   
 }
 
@@ -297,7 +304,76 @@ a.current{
 }
 .freind-post-actions i{
     font-size: 20px;
-    padding: 5px;
     cursor: pointer;
+    
+}
+.chat-section{
+    padding-left: 30px;
+}
+.sponser{
+    padding: 10px;
+    border-bottom: solid 1.5px #a7a6a6;
+}
+.birthdays{
+    display: flex; 
+    align-items: center;
+    border-bottom: solid 1.5px #a7a6a6;
+}
+.img-wrapper.chat img{
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+}
+/* large screen responsive */
+@media only screen and (min-width: 1400px) {
+   .content{
+    justify-content:space-between;
+   }
+   .Post-section{
+    width: 70%;
+   }
+   .chat-section{
+    width:20%
+   }
+   .exlpore-section{
+    width: 20%;
+   }
+   .Stories{
+    width: 800px;
+   }
+   .own-post{
+    width: 800px;
+   }
+   .freind-posts{
+    width: 800px;
+   }
+   .img-wrapper img{
+    height: 50px;
+    width: 50px;
+   }
+   
 
 }
+@media only screen and (max-width: 820px) {
+    .actions{
+        display: none;
+    }
+    header{
+        height: 70px;
+        justify-content: flex-start;
+    }
+    header .img-wrapper img{
+        height: 50px;
+        width: 50px;
+        padding: none;
+    }
+    header p{
+        font-size: 25px;
+    }
+    header i{
+        font-size: 20px;
+    }
+    header .searchbar{
+        width: 300px;
+    }
+  }

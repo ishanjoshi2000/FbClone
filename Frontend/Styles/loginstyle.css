@@ -27,8 +27,8 @@ body{
     transform: translate(-50%, -50%);
 }
 .login{
-    width: 550px;
-    height:300px;
+    max-width: 550px;
+    min-height:300px;
     padding: 10px;
     background-color: #fff;
     border-radius: 5px;
@@ -84,3 +84,14 @@ form input:hover{
     box-shadow: 0 0 10px rgba(49, 49, 49, 0.5); 
     transform: scale(1.05);
 }
+
+@media (orientation: portrait) {
+    .container {
+      flex-direction: column;
+    }
+    .login{
+        height: auto;
+        width: auto;
+        margin-top: 15px;
+    }
+  }
