@@ -131,6 +131,9 @@ a.current{
 .exlpore-section{
     padding: 0px 30px 0px 10px;
 }
+.icon-wrapper.drawer{
+    display: none;
+}
 .exlore-top{
     display: flex;
     flex-direction: column;
@@ -348,8 +351,8 @@ a.current{
     width: 800px;
    }
    .img-wrapper img{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
    }
    
 
@@ -359,15 +362,14 @@ a.current{
         display: none;
     }
     nav  a i{
-        font-size: 30px;
+        font-size: 25px;
     }
-    header{
-        height: 70px;
-      
+    .content{
+        justify-content: center;
     }
-    header .img-wrapper img{
-        height: 50px;
-        width: 50px;
+    .img-wrapper img{
+        height: 40px;
+        width: 40px;
         padding: none;
     }
     header p{
@@ -390,5 +392,36 @@ a.current{
         padding: 0px 10px 0px 5px;
         font-size: 40px;
         
+    }
+    .chat-section{
+        display: none;
+    }
+    .content{
+        justify-content: flex-start;
+    }
+    header .user-info p{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 820px) {
+ .exlpore-section{
+    display: none;
+    }
+    nav a{
+        padding: 10px 30px 10px 30px;
+    }
+    .spacing-container{
+        padding: 10px;
+    }
+    .icon-wrapper.drawer{
+        display: flex; 
+        align-self: center;
+        cursor: pointer;
+        z-index: 999;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .content{
+        justify-content: flex-start;
     }
   }
